@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 3em;
+}
+
+#card1{
+    background-color: hsl(31, 77%, 52%);
+}
+#card2{
+    background-color: hsl(184, 100%, 22%);
+}
+#card3{
+    background-color: hsl(179, 100%, 13%);
+}
+
+.column {
+    width: 100%;
+    display: block;
+    margin-bottom: 0.5em;
+   }
+  .container-fluid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 8em;
+    margin-right: 8em;
+    margin-bottom: 3em;
+    }
+
+.TitleImage{
+    float: left;
+}
+.card-title{
+    margin-top: 90px;   
+    text-align: left;
+    color:white;
+    font-weight: 400;
+}
+.card-text{
+    margin-top: 42px;  
+    text-align: left;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+}
+.b{
+    background-color: #ffffff;
+    border: none;
+    border-radius: 60px;
+    padding: 12px 42px;   
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-top: 30px;      
+}
+#b1{
+    color: hsl(31, 77%, 52%);
+}
+#b2{
+    color: hsl(184, 100%, 22%);
+}
+#b3{
+    color: hsl(179, 100%, 13%);
+}
+#b1:hover{
+    background-color: #5f8669;
+    transition: 0.6s;
+}
+#b2:hover{
+    background-color: #c5b779;
+    transition: 0.6s;
+}
+#b3:hover{
+    background-color: #5d81aa;
+    transition: 0.6s;
+}
+
+/* Responsive columns */
+@media screen and (min-width: 960px) {
+    .container-fluid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        /* min-height: 100vh;
+        min-width: 10em; */
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-top: 18%;
+    }
+    
+    .column {
+      width: 30%;
+      display: inline-block;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .container-fluid{
+        margin-top: 15%;      
+    }
+    
+    .column {
+      width: 18%;
+      display: inline-block;
+    }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 9px 12px 0 rgba(0, 0, 0, 0.6);
+  padding: 60px;
+  background-color: rgb(255, 255, 255);
+}
